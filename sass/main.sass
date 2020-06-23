@@ -1,0 +1,509 @@
+@import "reset"
+.title
+	font-size: 38px
+	line-height: 42px
+	margin-bottom: 70px
+.button
+	display: flex
+	justify-content: center
+	align-items: center
+	color: #fff
+	height: 56px
+	width: 230px
+	background-color: $accent
+	border-radius: 50px
+	transition: 0.3s
+	cursor: pointer
+	font-size: 18px
+	font-weight: 500
+	&:hover
+		background-color: $main
+		transition: 0.3s
+		box-shadow: 0 0 5px rgba($main, .1)
+.header
+	&-bottom
+		background: linear-gradient(90deg, #00A02B 6.69%, #00B831 84.64%)
+		padding-top: 15px
+		padding-bottom: 15px
+		ul
+			display: flex
+			justify-content: space-between
+			align-items: center
+			li
+				a
+					color: #ffffff
+					font-size: 18px
+					transition: 0.3s
+					position: relative
+					&:after
+						position: absolute
+						content: ''
+						width: 0%
+						height: 2px
+						background-color: #fff
+						bottom: -3px
+						left: 0
+						transition: 0.3s
+					&:hover
+						&:after
+							width: 100%
+							transition: 0.3s
+	&-top
+		padding-top: 30px
+		padding-bottom: 30px
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-button
+			display: flex
+			width: 20%
+		&-menu
+			display: flex
+			width: 30%
+			justify-content: center
+			ul
+				display: flex
+				justify-content: space-between
+				align-items: center
+				li
+					display: flex
+					justify-content: center
+					align-items: center
+					margin: 0 10px
+					a
+						position: relative
+						&:after
+							position: absolute
+							content: ''
+							left: 0
+							bottom: -2px
+							height: 1px
+							width: 0%
+							background-color: $accent
+							transition: 0.3s
+						&:hover
+							color: $accent
+							transition: 0.3s
+							&:after
+								width: 100%
+								transition: 0.3s
+		&-phone
+			display: flex
+			justify-content: center
+			align-items: flex-end
+			width: 25%
+			flex-direction: column
+			a
+				font-size: 24px
+				font-weight: 700
+				line-height: 29px
+				margin-bottom: 10px
+				position: relative
+				transition: 0.3s
+				&:after
+					content: ''
+					position: absolute
+					bottom: -3px
+					width: 0%
+					height: 2px
+					background-color: $accent
+					left: 0
+					transition: 0.3s
+				&:hover
+					color: $accent
+					&:after
+						width: 100%
+						transition: 0.3s
+			.adress
+				display: flex
+				flex-direction: column
+				align-items: flex-end
+				span
+					font-size: 16px
+					position: relative
+				span:first-child
+					&:after
+						position: absolute
+						content: ''
+						height: 14px
+						width: 10px
+						background-image: url(../img/icons/map.svg)
+						background-repeat: no-repeat
+						background-size: contain
+						background-position: center center
+						top: 50%
+						transform: translateY(-50%)
+						left: -15px
+		&-logo
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			width: 25%
+			a
+				img
+					max-width: 100%
+
+.offer
+	background-image: url(../img/bg-offer.svg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center center 
+	&-wrap
+		margin-top: 20px
+		margin-bottom: 140px
+		&-item
+			h1
+				font-size: 48px
+				font-weight: 700
+				line-height: 48px
+				max-width: 360px
+			p
+				font-size: 20px
+				font-weight: 700
+				margin-top: 24px
+				margin-bottom: 30px
+				max-width: 360px
+
+.services
+	background-image: url(../img/bg-body.svg)
+	background-repeat: no-repeat
+	background-size: 100%
+	background-position: center center
+	&-staff
+		margin-top: 100px
+		.title
+			color: #ffffff
+		&-wrap
+			display: flex
+			justify-content: space-between
+			align-items: flex-start
+			&-item
+				display: flex
+				flex-direction: column
+				align-items: center
+				justify-content: flex-start
+				width: 23%
+				margin-top: 140px
+				margin-bottom: 30px
+				&-top
+					position: relative
+					width: 100%
+					height: 280px
+					background: linear-gradient(180deg, rgba(196, 196, 196, .4) 58.65%, rgba(255, 255, 255, 0.65) 100%)
+					display: flex
+					align-items: flex-end
+					justify-content: center
+					padding: 40px
+					border-right: 2px solid rgba(107, 203, 133, .5 )
+					border-left: 2px solid rgba(107, 203, 133, .5 )
+					.text
+						strong
+							margin-bottom: 1px
+							display: block
+							font-size: 24px
+							line-height: 26px
+							color: #ffffff
+							font-weight: 500
+						p
+							font-size: 18px
+							font-weight: 400
+							margin-top: 20px
+							color: #ffffff
+					.avatar
+						position: absolute
+						left: 50%
+						transform: translateX(-50%)
+						top: -140px
+						width: 260px
+						height: 260px
+						background-color: rgb(0 , 184, 49)
+						display: flex
+						justify-content: center
+						align-items: center
+						border-radius: 50%
+						border: 10px solid #00A02B
+						img
+							width: 220px
+							height: 220px
+							border-radius: 50%
+				&-bottom
+					background-color: #fff
+					width: 100%
+					padding: 40px
+					box-shadow: 0px 10px 22px rgba(0, 0, 0, 0.23)
+					.button
+						width: 100%
+						margin-top: 30px
+					.icons
+						display: flex
+						justify-content: space-between
+						align-items: flex-start
+						padding: 0 10px
+						div
+							display: flex
+							flex-direction: column
+							align-items: center
+							font-weight: 700
+							font-size: 18px
+							line-height: 22px
+							img
+								display: block
+								margin-bottom: 15px
+	&-banner
+		margin-top: 70px
+		margin-bottom: 70px
+		display: flex
+		border-radius: 50px
+		box-shadow: 0px 0px 22px rgba(0, 0, 0, 0.25)
+		padding: 55px 130px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		justify-content: center
+		background-color: $accent
+		background-image: url(../img/banner.svg)
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: -4px 00px
+		max-width: 1110px
+		.button
+			background-color: $main
+			&:hover
+				background-color: $light
+				color: $dark
+		h2
+			color: #ffffff
+			font-size: 32px
+			line-height: 34px
+			font-weight: 500
+			margin-bottom: 10px
+		p
+			text-transform: uppercase
+			font-size: 60px
+			font-weight: 700
+			line-height: 60px
+			color: #ffffff
+			margin-bottom: 30px
+	&-serv
+		&-wrap
+			display: flex
+			flex-wrap: wrap
+			justify-content: space-between
+			align-items: flex-start
+			&-item
+				display: block
+				width: 48%
+				margin-bottom: 47px
+				padding: 50px
+				background-color: #ffffff
+				border-radius: 43px
+				box-shadow: 0px 4px 28px rgba(208, 208, 208, 0.65)
+				background-repeat: no-repeat
+				background-position: top left	
+				background-size: contain
+				transition: 0.3s
+				&:hover
+					background-color: $accent
+					h3
+						color: #ffffff
+					ul
+						li
+							color: #ffffff
+							&:after
+								background-color: #fff
+				ul
+					li
+						padding-left: 20px
+						position: relative
+						font-size: 20px
+						font-weight: 500
+						margin: 5px 0
+						&:after
+							position: absolute
+							content: ''
+							height: 7px
+							width: 7px
+							background-color: $main
+							top: 50%
+							transform: translateY(-50%)
+							left: 0
+				h3
+					color: $main
+					font-size: 32px
+					line-height: 34px
+					margin-bottom: 40px
+					display: block
+			&-item:first-child
+				background-image: url(../img/services/1.svg)
+				padding-left: 190px
+			&-item:nth-child(2)
+				background-image: url(../img/services/2.svg)
+				background-position: top right
+			&-item:nth-child(3)
+				background-image: url(../img/services/3.svg)
+				padding-left: 190px
+			&-item:nth-child(4)
+				background-image: url(../img/services/4.svg)
+				background-position: top right
+
+.question
+	padding-left: 150px
+	padding-top: 150px
+	padding-bottom: 100px
+	&-wrap	
+		background: linear-gradient(119.53deg, #FFFFFF 6.12%, #F7F7F7 65.08%)
+		box-shadow: 0px 0px 30px rgba(121, 121, 121, 0.32)
+		border-radius: 50px
+		position: relative
+		padding: 70px 120px
+		display: flex
+		flex-direction: column
+		align-items: flex-end
+		justify-content: flex-start
+		form
+			input[type="tel"]
+				display: block
+				margin-top: 25px
+				margin-bottom: 30px
+		h2
+			font-size: 40px
+			font-weight: 500
+			margin-bottom: 50px
+			line-height: 42px
+			display: block
+		img
+			position: absolute
+			bottom: -22px
+			left: -180px
+
+.footer
+	background: linear-gradient(90deg, #00A02B 6.69%, #00B831 84.64%)	
+	padding-top: 40px
+	padding-bottom: 30px
+	display: flex
+	justify-content: space-between
+	align-items: center
+	&-wrap
+		display: flex
+		justify-content: space-between
+		align-items: center
+		&-logo
+			display: flex
+			justify-content: flex-start
+			align-items: center
+			width: 25%
+		&-phone
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			width: 21%
+			.phone
+				color: #ffffff
+				font-size: 24px
+				font-weight: 700
+				margin-bottom: 25px
+				position: relative
+				&:after
+					position: absolute
+					content: ''
+					height: 2px
+					width: 0%
+					background-color: #fff
+					transition: 0.3s
+					bottom: -5px
+					left: 0
+				&:hover
+					&:after
+						transition: 0.3s
+						width: 100%
+			.social
+				display: flex
+				justify-content: flex-end
+				a
+					margin-left: 10px
+					position: relative
+					transition: 0.3s
+					display: flex
+					justify-content: center
+					align-items: center
+					width: 30px
+					height: 30px
+					&:hover
+						transition: 0.3s
+						transform: scale(1.1)
+		&-adress
+			display: flex
+			flex-direction: column
+			align-items: flex-start
+			justify-content: center
+			width: 25%
+			padding-left: 50px
+			p
+				font-size: 18px
+				line-height: 24px
+				color: #ffffff
+			h3
+				position: relative
+				padding-left: 20px
+				color: #ffffff
+				font-size: 20px
+				font-weight: 700
+				margin-bottom: 15px
+				&:after
+					position: absolute
+					content: ''
+					top: 50%
+					left: 0
+					transform: translateY(-50%)
+					background-image: url(../img/icons/map-white.svg)
+					height: 15px
+					width: 12px
+					background-repeat: no-repeat
+					background-size: contain
+					background-position: center center
+		&-time
+			width: 15%
+			display: flex
+			flex-direction: column
+			align-items: flex-end
+			p
+				font-size: 18px
+				line-height: 24px
+				color: #ffffff
+			h3
+				position: relative
+				padding-left: 20px
+				color: #ffffff
+				font-size: 20px
+				font-weight: 700
+				margin-bottom: 15px
+				&:after
+					position: absolute
+					content: ''
+					top: 50%
+					left: 0
+					transform: translateY(-50%)
+					background-image: url(../img/icons/map-white.svg)
+					height: 15px
+					width: 12px
+					background-repeat: no-repeat
+					background-size: contain
+					background-position: center center
+
+
+
+
+
+
+
+
+	
+@import "media1200"
+@import "media992"
+@import "media768"
+@import "media578"
+
+
+
+
+
