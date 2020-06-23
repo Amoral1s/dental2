@@ -1021,9 +1021,84 @@ section {
   background-position: center center;
 }
 
+@media (max-width: 1800px) {
+  .services {
+    background-size: cover;
+  }
+}
+
 @media (max-width: 1199px) {
-  body {
-    background-color: #fff;
+  .header-bottom ul li a {
+    font-size: 16px;
+  }
+  .header-top-menu ul li a {
+    font-size: 14px;
+  }
+  .header-top-phone .adress span {
+    font-size: 14px;
+  }
+  .header-top-phone a {
+    font-size: 20px;
+  }
+  .footer-wrap-time {
+    width: 20%;
+  }
+  .footer-wrap-adress {
+    width: 30%;
+  }
+  .footer-wrap-phone {
+    width: 25%;
+  }
+  .footer-wrap-logo {
+    width: 20%;
+  }
+  .footer-wrap-logo a img {
+    max-width: 100%;
+  }
+  .header-top-button {
+    width: 23%;
+  }
+  .header-top {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+  .header-top-logo {
+    width: 22%;
+  }
+  .offer-wrap {
+    margin-bottom: 100px;
+  }
+  .services-staff {
+    margin-top: 70px;
+  }
+  .services-staff .title {
+    margin-bottom: 50px;
+  }
+  .services-staff-wrap-item {
+    margin-top: 100px;
+  }
+  .services-staff-wrap-item-top .avatar {
+    width: 213px;
+    height: 213px;
+    top: -95px;
+  }
+  .services-staff-wrap-item-top .avatar img {
+    width: 173px;
+    height: 173px;
+  }
+  .services-staff-wrap-item-bottom {
+    padding: 30px 20px;
+  }
+  .services-banner {
+    max-width: 930px;
+    padding-right: 90px;
+    margin-top: 40px;
+  }
+  .services-serv-wrap-item h3 {
+    font-size: 24px;
+  }
+  .services-serv-wrap-item ul li {
+    font-size: 16px;
   }
 }
 
