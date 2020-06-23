@@ -434,7 +434,7 @@ section {
 }
 
 .offer {
-  background-image: url(../img/bg-offer.svg);
+  background-image: url(../img/bg-offer.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -461,7 +461,7 @@ section {
 }
 
 .services {
-  background-image: url(../img/bg-body.svg);
+  background-image: url(../img/bg-body.png);
   background-repeat: no-repeat;
   background-size: 100%;
   background-position: center center;
@@ -639,7 +639,7 @@ section {
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #1780FE;
-  background-image: url(../img/banner.svg);
+  background-image: url(../img/banner.png);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: -4px 00px;
