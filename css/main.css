@@ -195,6 +195,9 @@ section {
   cursor: pointer;
   font-size: 18px;
   font-weight: 500;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
 }
 
 .button:hover {
