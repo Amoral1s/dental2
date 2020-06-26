@@ -25,6 +25,10 @@
 		background: linear-gradient(90deg, #00A02B 6.69%, #00B831 84.64%)
 		padding-top: 15px
 		padding-bottom: 15px
+		.burger
+			display: none
+		.button
+			display: none
 		ul
 			display: flex
 			justify-content: space-between
@@ -48,6 +52,8 @@
 						&:after
 							width: 100%
 							transition: 0.3s
+		ul:last-child
+			display: none
 	&-top
 		padding-top: 30px
 		padding-bottom: 30px
@@ -489,6 +495,75 @@
 					background-repeat: no-repeat
 					background-size: contain
 					background-position: center center
+.overlay
+	position: fixed
+	top: 0
+	bottom: 0
+	right: 0
+	left: 0
+	width: 100%
+	height: 100%
+	background-color: rgba(#000, .4)
+	z-index: 150
+	display: none
+.popup
+	position: fixed
+	top: 50%
+	left: 50%
+	transform: translate(-50%, -50%)
+	background: linear-gradient(112.28deg, #FFFFFF 6.12%, #F7F7F7 65.08%)
+	width: 510px
+	z-index: 160
+	height: 370px
+	border-radius: 50px
+	box-shadow: 0px 0px 30px rgba(121, 121, 121, 0.32)
+	overflow: hidden
+	display: none
+	img
+		max-height: 100%
+		position: absolute
+		left: -120px
+		bottom: -20px
+	&-wrap
+		padding-left: 200px
+		padding-top: 40px
+		padding-bottom: 40px
+		padding-right: 40px
+		.close
+			position: absolute
+			font-size: 30px
+			font-weight: 700
+			display: none
+			line-height: 40px
+			top: 10px
+			right: 25px
+			cursor: pointer
+		form
+			input
+				max-width: 100%
+			input[type="tel"]
+				margin-top: 15px
+				margin-bottom: 30px
+				height: 45px
+			input[type="text"]
+				height: 45px
+		h2
+			font-size: 28px
+			font-weight: 500
+			line-height: 28px
+			margin-bottom: 30px
+#thx
+	position: fixed
+	top: 50%
+	left: 50%
+	z-index: 200
+	transform: translate(-50%, -50%)
+	display: none
+
+
+
+
+
 
 
 
